@@ -1,6 +1,5 @@
 # 🚗 Tesla Sales Analysis and Performance
 
-<img src="https://cdn.jsdelivr.net/npm/tabler-icons@latest/icons/brand-python.svg" width="20" alt="Python"/>  <img src="https://cdn.jsdelivr.net/npm/tabler-icons@latest/icons/file-spreadsheet.svg" width="20" alt="Data"/>  <img src="https://cdn.jsdelivr.net/npm/tabler-icons@latest/icons/chart-line.svg" width="20" alt="Charts"/>  <img src="https://cdn.jsdelivr.net/npm/tabler-icons@latest/icons/chart-pie.svg" width="20" alt="Metrics"/>  <img src="https://cdn.jsdelivr.net/npm/tabler-icons@latest/icons/brand-github.svg" width="20" alt="GitHub"/>
 
 A concise exploratory data analysis of Tesla sales and profitability (price, gross profit) with time-series and categorical breakdowns. The analysis is implemented in a Jupyter Notebook and uses a provided Excel dataset.
 
@@ -14,7 +13,7 @@ A concise exploratory data analysis of Tesla sales and profitability (price, gro
 
 ---
 
-## Highlights (from the notebook)
+## Highlights
 
 - Key fields in the dataset: Model, Period (YYYYMM), Country, Purchase type, Version, Price, Gross Profit.
 - Period is converted to a datetime and a `year` column is extracted.  
@@ -80,20 +79,8 @@ Tesla_Sales_Performance.pdf     # Notebook exported to PDF
 
 How it fits together: the notebook loads the Excel file, performs light feature engineering (date/year + profitability/cost ratios), and generates aggregated tables and plots (time series, bar charts) that summarize sales and profitability by model, country, purchase type and version.
 
----
 
-## Suggestions / next steps
 
-- Add a `requirements.txt` or `environment.yml` for reproducible installs.
-- Parameterize the notebook to accept an external data path or to chunk large files.
-- Add unit tests for the feature-engineering steps (Period -> date/year, ratio calculations).
-- Save aggregated CSV outputs (e.g., `SP_Version.csv`) for quick downstream consumption.
-
----
-
-## Attribution
-
-Icons used from Tabler Icons (hosted via jsDelivr): https://tabler-icons.io/
 
 ---
 
